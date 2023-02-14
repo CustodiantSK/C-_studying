@@ -96,6 +96,8 @@
         * result result             //то что вернет функция, чтобы потом использовать и кудато сохранить значение, которое посчитает функция
     * }
 ---
+**void** - метод в котором значения не возвращаются
+---
 **метод поиска 3 элементов**
 
 * int MAX(int arg1, int arg2, int arg3)     
@@ -106,6 +108,29 @@
     return result;
 }
 ---
+**Метод создания массива заполненого случайными числами**
+* void FillArray(int[] collection) //void- метод, который ничего не возвращает
+{
+    int lenght = collection.Length; //получение длины массива
+    int index = 0;
+    while (index < lenght)
+    {
+        collection[index] = new Random().Next(1, 10); // положили в коллекцию случайное число из диапазона 1-10
+        index++;
+    }
+}
+---
+**Метод печати массива**
+*void PrintArray(int[] col)
+{
+    int count = col.Length; //получили длину массива
+    int position = 0;
+    while (position < count)
+    {
+        Console.WriteLine(col[position]);
+        position++;
+    }
+}
 
 ---
 ## ***Массивы***
