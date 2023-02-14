@@ -187,7 +187,7 @@
 
 ---
 **Метод печати массива**
-*void PrintArray(int[] col)
+* void PrintArray(int[] col)
 {
     int count = col.Length; //получили длину массива
     int position = 0;
@@ -200,7 +200,7 @@
 
 ---
 **Метод поиска индекса искомого значения**
-*int IndexOf(int[] collection, int find) //приходит массив и какойто элемент
+* int IndexOf(int[] collection, int find) //приходит массив и какойто элемент
 {
     int count = collection.Length; // длина массива
     int index = 0; //счетчик
@@ -215,6 +215,20 @@
         index++;
     }
     return position;
+}
+
+---
+**метод замены символов в тексте**
+* string Replace(string text, char oldValue, char newValue)
+{
+    string result = String.Empty; //инициализация пустой строки
+    int length = text.Length; //показывает количество символов в строке
+    for (int i = 0; i < length; i++)
+    {
+        if (text[i] == oldValue) result = result + $"{newValue}"; // применимо только для  char
+        else result = result + $"{text[i]}";
+    }
+    return result;
 }
 
 ---
