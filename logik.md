@@ -98,6 +98,8 @@
 ---
 **void** - метод в котором значения не возвращаются
 ---
+**index** - метод в котором возвращается позиция
+---
 **метод поиска 3 элементов**
 
 * int MAX(int arg1, int arg2, int arg3)     
@@ -130,6 +132,24 @@
         Console.WriteLine(col[position]);
         position++;
     }
+}
+---
+**Метод поиска индекса искомого значения**
+*int IndexOf(int[] collection, int find) //приходит массив и какойто элемент
+{
+    int count = collection.Length; // длина массива
+    int index = 0; //счетчик
+    int position = -1; // запишем нужный элемент в переменную
+    while (index < count)
+    {
+        if (collection[index] == find)
+        {
+            position = index;
+            break;
+        }
+        index++;
+    }
+    return position;
 }
 
 ---
