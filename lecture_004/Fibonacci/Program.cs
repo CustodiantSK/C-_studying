@@ -8,7 +8,7 @@
     else return Fibonacci(n - 1) + Fibonacci(n - 2);
 }
 
-for (int i = 1; i < 40; i++)
+for (int i = 1; i < 40; i++)        //больше 40 начинает висеть сильно
 {
     Console.WriteLine($"f({i}) = {Fibonacci(i)}");
 }
