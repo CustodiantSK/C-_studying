@@ -29,10 +29,10 @@ void PrintArray(int[,] inArray)
 }
 
 
-Console.Write("Введте количество строк массива: ");
+Console.Write("Введите количество строк массива: ");
 int rows = int.Parse(Console.ReadLine()!);
 
-Console.Write("Введте количество столбцов массива: ");
+Console.Write("Введите количество столбцов массива: ");
 int colums = int.Parse(Console.ReadLine()!);
 
 int[,] array = GetArray(rows, colums, 0, 10);     //от 0 до 10 
